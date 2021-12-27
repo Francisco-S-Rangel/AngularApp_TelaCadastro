@@ -1,0 +1,52 @@
+.main_container {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: rgb(61, 61, 255);
+    margin-top: 1.2rem;
+}
+h2 {
+    margin-top: 0.5rem;
+    margin-left: 10rem;
+}
+h4 {
+    margin-left: 5.2rem;
+    font-size: 1rem;
+    color: rgb(247, 174, 174)
+}
+.form_container {
+    background-color: white;
+    width: 620px;
+    border-radius: 10px;
+    height: 630px;
+    margin-top: 1.2rem;
+}
+.formulario {
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+input {
+    width: 26rem;
+    padding: 0.32rem;
+}
+button {
+    margin-top: 0.6rem;
+    background-color: rgb(34, 162, 34);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    width: 8rem;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(61, 61, 255);
+}
+

@@ -1,0 +1,57 @@
+ <div class="main_container">
+        <h1>Cadastro de Usuario</h1>
+            <div class="form_container">
+                <form [formGroup]="telacadastroForm" autocomplete="off">
+                    <div class="aprensentacao">
+                        <h2>Criar um novo usuario</h2>
+                        <h4>Todos os campos tirando o Numero de Celular são Obrigatorios!</h4>
+                    </div>
+                    <hr>
+                    <div class="formulario">
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">UserName</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" formControlName="UserName">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">FullName</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" formControlName="FullName">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" formControlName="Email">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">BornDate</label>
+                        <div class="col-sm-10">
+                          <input type="datetime" class="form-control" formControlName="BornDate"> 
+                        </div>
+                      </div>
+                    <div class="row mb-3">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Number</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" placeholder="Opcional" formControlName="Number">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                      <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3" formControlName="Password">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control" formControlName="ConfirmPassword">
+                        </div>
+                      </div>
+                    <button type="submit" class="btn-cadastrar" (click)="NovoCadastro()" [disabled]="!telacadastroForm.valid">Cadastrar</button>
+                    </div>
+                  </form>
+            </div>
+</div>
